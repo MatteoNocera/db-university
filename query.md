@@ -46,6 +46,6 @@ FROM departments;
 
 <!-- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50) -->
 
-SELECT COUNT(phone)
-AS NumberOfTeachersPhone
+SELECT COUNT(phone = 'NULL') 
+AS NumberOfNoPhoneTeachers 
 FROM teachers;
